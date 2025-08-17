@@ -11,6 +11,16 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ""),
       },
+      "/newsdata-api": {
+        target: "https://newsdata.io",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/newsdata-api/, ""),
+      },
+      "/cnn-api": {
+        target: "https://berita-indo-api-next.vercel.app",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/cnn-api/, ""),
+      },
     },
   },
 })

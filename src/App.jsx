@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getNews } from "./api/endpoints";
+import { getAllNews, getCNNNews } from "./api/endpoints";
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 import NewsDetail from "./pages/NewsDetail";
 
@@ -11,7 +11,7 @@ function Home() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const data = await getNews("ai");
+        const data = await getAllNews("technology");
         setNews(data?.articles || []);
       } catch (error) {
         console.error(error);
@@ -34,10 +34,11 @@ function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-gray-100 p-6">
       <h1 className="text-4xl font-extrabold text-center mb-8 text-blue-700 drop-shadow-lg">
-        📰 Portal Berita Modern
+        📱 TechNews Indonesia
       </h1>
+
       {news.length === 0 ? (
-        <p className="text-center text-gray-600">Tidak ada berita ditemukan.</p>
+        <p className="text-center text-gray-600">Tidak ada berita teknologi ditemukan.</p>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {news.map((item, index) => (
@@ -62,9 +63,22 @@ function Home() {
                   {item.description}
                 </p>
                 <div className="flex items-center justify-between mt-auto">
-                  <span className="text-xs text-gray-400">
-                    {item.source?.name}
-                  </span>
+                  <div className="flex flex-col gap-1">
+                    <span className="text-xs text-gray-400">
+                      {item.source?.name}
+                    </span>
+                    {item.apiSource && (
+                      <span className={`text-xs px-2 py-1 rounded text-white ${
+                        item.apiSource === 'NewsAPI' 
+                          ? 'bg-blue-500' 
+                          : item.apiSource === 'CNN Indonesia'
+                          ? 'bg-red-500'
+                          : 'bg-green-500'
+                      }`}>
+                        {item.apiSource}
+                      </span>
+                    )}
+                  </div>
                   <button
                     className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow hover:bg-blue-700 transition"
                     onClick={() =>
