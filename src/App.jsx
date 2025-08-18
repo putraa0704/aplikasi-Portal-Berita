@@ -94,7 +94,7 @@ function Home() {
           {/* Header with Search Info */}
           <div className="text-center mb-8">
             <h1 className="text-4xl font-extrabold mb-4 text-blue-700 drop-shadow-lg">
-              📱 TechNews Indonesia
+              📱 AndraNews Indonesia
             </h1>
             
             {/* Search Results Info */}

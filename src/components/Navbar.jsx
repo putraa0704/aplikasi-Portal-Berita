@@ -60,8 +60,8 @@ function Navbar({ onSearch }) {
             className="flex items-center space-x-2 text-2xl font-bold text-blue-700 hover:text-blue-800 transition-colors"
           >
             <span className="text-3xl">📱</span>
-            <span className="hidden sm:inline">TechNews Indonesia</span>
-            <span className="sm:hidden">TechNews</span>
+            <span className="hidden sm:inline">AndraNews Indonesia</span>
+            <span className="sm:hidden">AndraNews</span>
           </Link>
 
           {/* Desktop Navigation */}

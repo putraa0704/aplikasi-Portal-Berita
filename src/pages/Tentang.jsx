@@ -5,7 +5,7 @@ function Tentang() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-extrabold text-blue-700 mb-4">
-            Tentang TechNews Indonesia
+            Tentang AndraNews Indonesia
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Portal berita teknologi terpercaya yang menghadirkan informasi terkini seputar dunia teknologi Indonesia dan global.
@@ -43,7 +43,7 @@ function Tentang() {
         <div className="bg-white rounded-3xl p-8 shadow-xl mb-12">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-blue-700 mb-4">
-              Mengapa Memilih TechNews Indonesia?
+              Mengapa Memilih AndraNews Indonesia?
             </h2>
           </div>
           
@@ -83,7 +83,7 @@ function Tentang() {
         {/* Stats */}
         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-8 text-white">
           <div className="text-center mb-6">
-            <h2 className="text-3xl font-bold mb-2">TechNews Indonesia dalam Angka</h2>
+            <h2 className="text-3xl font-bold mb-2">AndraNews Indonesia dalam Angka</h2>
             <p className="opacity-90">Pencapaian kami hingga saat ini</p>
           </div>
           

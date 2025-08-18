@@ -32,7 +32,7 @@ function Kontak() {
             Hubungi Kami
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Punya pertanyaan, saran, atau ingin bekerjasama? Jangan ragu untuk menghubungi tim TechNews Indonesia.
+            Punya pertanyaan, saran, atau ingin bekerjasama? Jangan ragu untuk menghubungi tim AndraNews Indonesia.
           </p>
         </div>
 
@@ -137,8 +137,8 @@ function Kontak() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-800">Email</h3>
-                    <p className="text-gray-600">info@technews-indonesia.com</p>
-                    <p className="text-gray-600">redaksi@technews-indonesia.com</p>
+                    <p className="text-gray-600">info@andranews-indonesia.com</p>
+                    <p className="text-gray-600">redaksi@andranews-indonesia.com</p>
                   </div>
                 </div>
 
@@ -160,8 +160,8 @@ function Kontak() {
                   <div>
                     <h3 className="font-semibold text-gray-800">Alamat</h3>
                     <p className="text-gray-600">
-                      Jl. Teknologi Raya No. 123<br />
-                      Jakarta Selatan 12345<br />
+                      Jl. Pitara No. 32<br />
+                      Depok 12345<br />
                       Indonesia
                     </p>
                   </div>
@@ -177,21 +177,21 @@ function Kontak() {
                 <div>
                   <h3 className="font-semibold text-gray-800 mb-2">Bagaimana cara mengirim berita?</h3>
                   <p className="text-gray-600 text-sm">
-                    Kirim press release atau informasi berita teknologi ke email redaksi@technews-indonesia.com
+                    Kirim press release atau informasi berita teknologi ke email redaksi@andranews-indonesia.com
                   </p>
                 </div>
 
                 <div>
                   <h3 className="font-semibold text-gray-800 mb-2">Apakah ada biaya berlangganan?</h3>
                   <p className="text-gray-600 text-sm">
-                    TechNews Indonesia gratis untuk semua pembaca. Tidak ada biaya berlangganan.
+                    AndraNews Indonesia gratis untuk semua pembaca. Tidak ada biaya berlangganan.
                   </p>
                 </div>
 
                 <div>
                   <h3 className="font-semibold text-gray-800 mb-2">Bagaimana cara berkerjasama?</h3>
                   <p className="text-gray-600 text-sm">
-                    Hubungi kami melalui form di samping dengan subjek "Kerjasama" atau email ke info@technews-indonesia.com
+                    Hubungi kami melalui form di samping dengan subjek "Kerjasama" atau email ke info@andranews-indonesia.com
                   </p>
                 </div>
               </div>
